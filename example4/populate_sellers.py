@@ -27,7 +27,7 @@ def add_seller(connection):
         for item_index in range(0, items_count):
             item_name = fake.text()
             item_description = fake.text()
-            item_price = random.randint(0, 100) + float(random.randint(0, 100) / 100.0);
+            item_price = random.randint(1, 100) + float(random.randint(0, 100) / 100.0);
 
             cursor.execute('''
                 INSERT INTO items(item_name, item_description, item_price, seller_pid)
